@@ -7,6 +7,7 @@ import Add from './Add'
 import Search from './Search'
 import Results from './Results';
 import Category from './Category';
+import Detail from './Detail';
 
 class Main extends Component {
   render() {
@@ -21,6 +22,7 @@ class Main extends Component {
           <Route path='/search' component={Search}/>
           <Route path='/results' component={Results}/>
           <Route path='/category' component={Category}/>
+          <Route path='/detail' component={Detail}/>
         </Switch>
       </main>
     );
