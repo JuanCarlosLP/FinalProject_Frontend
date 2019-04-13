@@ -9,6 +9,7 @@ class Menu extends Component {
     return (
       <Paper>
         <Posts/>
+       
       </Paper>
     );
   }

@@ -1,15 +1,44 @@
 import React from "react";
-import { Grid,Typography,Card,CardActionArea,CardActions,CardContent,CardMedia,Button } from "@material-ui/core";
+import { Grid,Typography,Card,CardActionArea,CardActions,CardContent,CardMedia } from "@material-ui/core";
 
 
 
  export const Posts=(props) => {
-    const fakeDb=[{
-      title:'',
-      id:'',
-      image:'',
 
-    }]
+  
+  
+    const fakeDb=[
+      {   id:'',
+          Title: 'Comida Mexicana',
+          Excerpt:'Aquí las quesadillas sí llevan queso',
+          img:'https://loremflickr.com/320/240/food'
+      },
+      {   id:'',
+          Title: 'Cenas Románticas',
+          Excerpt:'Para que te azoten contra la pared',
+          img:'https://loremflickr.com/320/240/food'
+      },
+      {   id:'',
+          Title: 'Comida Barata',
+          Excerpt:'Come rico sin salirte de tu presupuesto',
+          img:'https://loremflickr.com/320/240/food'
+      },
+      {
+          Title: 'Comida Vegetariana',
+          Excerpt:'Sí vives de ensalada',
+          img:'https://loremflickr.com/320/240/food'
+      },
+      {
+        Title: 'Comida Italiana',
+        Excerpt:'Algo más que pizza',
+        img:'https://loremflickr.com/320/240/food'
+    },
+    {
+      Title: 'Comida Light',
+      Excerpt:'Como bajar 10 kilos en 5 min',
+      img:'https://loremflickr.com/320/240/food'
+  }
+  ]
   return (
     <div style={{ marginTop: 20, padding: 30 }}>
       <Grid container spacing={40} justify="center">
@@ -19,25 +48,21 @@ import { Grid,Typography,Card,CardActionArea,CardActions,CardContent,CardMedia,B
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="{post.title}"
-                  height="140"
-                  image={post.image}
-                  title={post.title}
+                  alt="{post.Title}"
+                  maxheight='300'
+                  maxwidth="200"
+                  image={post.img}
+                  title={post.Title}
                 />
                 <CardContent>
                   <Typography gutterBottom color='inherit' variant="h5" component="h2">
-                    {post.title}
+                    {post.Title}
                   </Typography>
-                  <Typography component="p">{post.excerpt}</Typography>
+                  <Typography component="p"> {post.Excerpt} </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Learn More
-                </Button>
+               
               </CardActions>
             </Card>
           </Grid>
