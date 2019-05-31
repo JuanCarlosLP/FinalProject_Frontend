@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
+import { Link } from 'react-router-dom'
 
 const styles = theme => ({
   main: {
@@ -60,7 +61,7 @@ class Login extends Component {
   }
 
   onSubmit = event=>{
-
+    
     console.log(this.state)
 
     
@@ -112,6 +113,11 @@ class Login extends Component {
             className={classes.submit}
           >
             Iniciar Session
+          </Button>
+          <Button
+            type="submit"
+          >
+          <Link to='/Register'>Registrarse</Link>
           </Button>
         </form>
       </Paper>

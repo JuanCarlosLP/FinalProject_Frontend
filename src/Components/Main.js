@@ -8,6 +8,8 @@ import Search from './Search'
 import Results from './Results';
 import Category from './Category';
 import Detail from './Detail';
+import Register from './Register';
+import Welcome from './Welcome';
 
 class Main extends Component {
   render() {
@@ -23,6 +25,10 @@ class Main extends Component {
           <Route path='/results' component={Results}/>
           <Route path='/category' component={Category}/>
           <Route path='/detail' component={Detail}/>
+          <Route path='/register' component={Register}/>
+          <Route path='/Welcome' component={Welcome}/>
+          
+          
         </Switch>
       </main>
     );
