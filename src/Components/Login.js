@@ -65,7 +65,7 @@ class Login extends Component {
     console.log(this.state)
 
     
-    /*fetch('https://localhost:3001/insert',{
+    /*fetch('https://localhost:3001/post',{
       method: 'post',
       header:{
         "Content-Type":"aplication/json"
